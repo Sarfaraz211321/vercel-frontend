@@ -80,13 +80,13 @@ const Testimonials = [
   {
     name: "Kellan Anderson",
     role: "SELLING AGENTS",
-    text: "Precious ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "Kellan was very professional and helped me find the perfect property within my budget. Highly recommended!.",
     image: "testi.webp",
   },
   {
     name: "Adam Joseph",
     role: "SELLING AGENTS",
-    text: "Precious ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "The best real estate agent I’ve worked with — guided me through every step with honesty and patience.",
     image: "testj.jpg",
   },
 ];
