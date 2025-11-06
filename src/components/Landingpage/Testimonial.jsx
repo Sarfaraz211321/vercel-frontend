@@ -74,7 +74,7 @@ const Testimonials = [
   {
     name: "Jacob William",
     role: "SELLING AGENTS",
-    text: "Precious ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "Excellent service and smooth experience throughout the buying process. Truly reliable and transparent!.",
     image: "test.jpeg",
   },
   {
