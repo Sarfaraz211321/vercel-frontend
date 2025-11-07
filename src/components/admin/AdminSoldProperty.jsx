@@ -8,7 +8,7 @@ const AdminSoldProperty = () => {
     fetchData();
   }, [])
   const fetchData = async () => {
-    const response = await axios.get('http://localhost:3000/api/admin-sold-list');
+    const response = await axios.get('https://vercel-backend-2-4ba3.onrender.com/api/admin-sold-list');
     if (response?.data?.code == 200) {
       setData(response?.data?.data)
     }
@@ -50,7 +50,7 @@ const AdminSoldProperty = () => {
                       <td>{item?.price}    </td>
                       <td>{item?.area}    </td>
                       <td>{item?.location}    </td>
-                      <td><img  height="60" width="100" src={`http://localhost:3000/img/${item?.pic}`} alt=''/>    </td>
+                      <td><img  height="60" width="100" src={`https://vercel-backend-2-4ba3.onrender.com/img/${item?.pic}`} alt=''/>    </td>
                     </tr>
                   </>)
                 })

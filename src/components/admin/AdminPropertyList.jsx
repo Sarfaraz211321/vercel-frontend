@@ -68,7 +68,7 @@ const AdminPropertyList = () => {
   }, [])
 
   const fetchData = async () => {
-    const response = await axios.get('http://localhost:3000/api/property-list');
+    const response = await axios.get('https://vercel-backend-2-4ba3.onrender.com/api/property-list');
     if (response?.data?.code == 200) {
       setListData(response?.data?.data)
       console.log(listData)
@@ -77,7 +77,7 @@ const AdminPropertyList = () => {
   }
   const handleBuy = async (propertyId) => {
     const userData = JSON.parse(localStorage.getItem('userInfo'));
-    const response = await axios.post('http://localhost:3000/api/buy', { userId: userData?._id, propertyId });
+    const response = await axios.post('https://vercel-backend-2-4ba3.onrender.com/api/buy', { userId: userData?._id, propertyId });
     console.log(response)
     if (response?.data?.code == 200) {
       Swal.fire({

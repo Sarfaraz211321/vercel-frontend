@@ -26,7 +26,7 @@ const SignIn = () => {
   })
 
   const handleLogin = async (data) => {
-    const response = await axios.post('http://localhost:3000/api/login', data);
+    const response = await axios.post('https://vercel-backend-2-4ba3.onrender.com/api/login', data);
     if (response?.data?.code == 200) {
 
 

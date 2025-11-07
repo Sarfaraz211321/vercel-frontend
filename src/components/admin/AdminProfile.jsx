@@ -55,7 +55,7 @@ const AdminProfile = () => {
       formData.append('profile', data.profile[0]);
       formData.append('userId',userData?._id)
 
-      const response = await axios.put('http://localhost:3000/api/user-update', formData, {
+      const response = await axios.put('https://vercel-backend-2-4ba3.onrender.com/api/user-update', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

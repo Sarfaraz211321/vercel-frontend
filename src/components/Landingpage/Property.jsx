@@ -67,7 +67,8 @@ const Property = () => {
   }, [])
 
   const fetchData = async () => {
-    const response = await axios.get('http://localhost:3000/api/property-list');
+    const response = await axios.get('https://vercel-backend-2-4ba3.onrender.com/api/property-list');
+
     if (response?.data?.code == 200) {
       setListData(response?.data?.data)
       console.log(listData)

@@ -37,11 +37,14 @@ const UserRegister = () => {
       formData.append('address', data.address);
       formData.append('profile', data.profile[0]);
 
-      const response = await axios.post('http://localhost:3000/api/user-register', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+         const response = await axios.post('https://vercel-backend-2-4ba3.onrender.com/api/user-register', 
+  formData, 
+  {
+    headers: {
+      'Content-Type': 'multipart/form-data',
+    }
+  }
+);
       if (response.status === 200) {
         Swal.fire({
           title: "Registration Successful",
