@@ -81,7 +81,7 @@ const Property = () => {
         navigate('/login')
         return
       }
-        const response = await axios.post('http://localhost:3000/api/buy', { userId: userData?._id, propertyId });
+        const response = await axios.post('https://vercel-backend-2-4ba3.onrender.com/api/buy', { userId: userData?._id, propertyId });
         console.log(response)
         if (response?.data?.code == 200) {
             Swal.fire({
